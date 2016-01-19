@@ -1,0 +1,30 @@
+name: Hardcore
+version: 0.2
+main: pl.panryba.mc.hardcore.Plugin
+database: true
+depend: [FishDb, FishAuth, TerazPolska]
+commands:
+    pvp:
+        description: Sprawdzenie stanu walki z innymi graczami
+        usage: /<command>
+    ochrona:
+        description: Sprawdzenie statusu ochrony nowego gracza lub wylaczenie ochrony
+        usage: |
+            /<command> [wylacz]
+            Przyklad: /<command> - sprawdzenie statusu Twojej ochrony
+            Przyklad: /<command> wylacz - wylaczenie Twojej ochrony
+    ostrzezenie:
+        description: Wlacza /  wylacza ostrzezenie przed wychodzeniem z gry w czasie walki
+        usage: /<command>
+    hardcore:
+        usage: /<command> reload
+        permission: hardcore.reload
+permissions:
+    hardcore.ban.protection:
+        default: op
+    hardcore.reload:
+        default: op
+    hardcore.teleport.instant:
+        default: op
+    hardcore.teleport.nocooldown:
+        default: op

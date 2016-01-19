@@ -1,0 +1,3 @@
+protection_time: 86400
+default_ban_time: 30
+ban_enabled: false
